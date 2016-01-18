@@ -57,5 +57,5 @@ staging:
 production:
   <<: *default
   database: blog_production
-  username: blog
+  username: develop
   password: <%= ENV['BLOG_DATABASE_PASSWORD'] %>
