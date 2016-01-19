@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root 'pages/welcome'
-  get 'pages/welcome', controller: 'pages/welcome'
+  root 'pages/welcome', controller: 'pages/welcome'
+  get  'pages/welcome', controller: 'pages/welcome'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
