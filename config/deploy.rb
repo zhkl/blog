@@ -15,8 +15,9 @@ set :pty,             true
 set :use_sudo,        false
 set :stage,           :staging
 set :deploy_via,      :remote_cache
-set :puma_bind,       "unix://#{shared_path}/tmp/sockets/blog-puma.sock"
-set :puma_rackup, -> { File.join(current_path, 'config.ru') }
+# set :puma_bind,       "unix://#{shared_path}/tmp/sockets/blog-puma.sock"
+set :puma_bind,       "unix:///home/deploy/apps/blog/shared/tmp/sockets/blog-puma.sock"
+# set :puma_rackup, -> { File.join(current_path, 'config.ru') }
 set :puma_state,      "#{shared_path}/tmp/pids/puma.state"
 set :puma_pid,        "#{shared_path}/tmp/pids/puma.pid"
 set :puma_access_log, "#{release_path}/log/puma.error.log"
