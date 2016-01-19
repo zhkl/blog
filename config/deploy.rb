@@ -26,6 +26,11 @@ set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true  # Change to false when not using ActiveRecord
 
+set :puma_preload_app, true
+
+
+
+
 ## Defaults:
 # set :scm,           :git
 # set :branch,        :master
@@ -103,8 +108,7 @@ end
 # Default value for :log_level is :debug
 # set :log_level, :debug
 
-# Default value for :pty is false
-# set :pty, true
+
 
 # Default value for :linked_files is []
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
