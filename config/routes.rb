@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'pages/welcome', controller: 'pages/welcome'
+  root to: 'pages#welcome'
   get  'pages/welcome', controller: 'pages/welcome'
 
   # The priority is based upon order of creation: first created -> highest priority.
