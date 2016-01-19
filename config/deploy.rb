@@ -6,7 +6,7 @@ set :repo_url, 'git@github.com:zhkl/blog.git'
 set :user, 'deploy'
 
 set :puma_threads,    [4, 16]
-set :puma_workers,    0
+set :puma_workers,    1
 
 set :deploy_to, '/home/deploy/apps/blog'
 
