@@ -13,7 +13,7 @@ threads 0,16
 
 bind 'unix:///home/deploy/apps/blog/shared/tmp/sockets/puma.sock'
 
-workers 0
+workers 1
 
 
 
