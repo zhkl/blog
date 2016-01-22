@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root to: 'pages#welcome'
   get  'pages/welcome', controller: 'pages/welcome'
 
+  resources :posts
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
